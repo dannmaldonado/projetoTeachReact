@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  text-decoration: none;
+}
+
+/* Fonte */
+@font-face {
+  font-family: "Lato";
+  src: url(../Fonts/Lato/Lato-Regular.ttf);
+}
+
+/* Reset CSS e Font do Body*/
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: "Lato";
+}
+
+/* Padrão de cores do Site */
+:root {
+  --verde: rgba(64, 197, 161); /* #40c5a1; */
+  --verdeTranspa: rgba(
+    64,
+    197,
+    161,
+    0.7
+  ); /* Verde com Transparência para o rodapé*/
+  --azul: rgba(41, 187, 227); /* #29bbe3; */
+  --laranja: rgba(245, 97, 84); /* #f56154; */
+  --Cinza: rgba(85, 86, 82); /* #555652; */
+  --Cinza-Claro: rgba(213, 215, 215); /* #d5d7d7; */
+  --Areia: rgba(240, 240, 235); /* #f0f0eb; */
+}
+
+/* Plano de fundo da página inicial*/
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url(../imagens/Fundo\ Home.jpg) top no-repeat;
+}
+
+/* Configuração da cor do fundo do menu superior*/
+.navbar-cunstom {
+  background-color: var(--Areia);
+}
+
+/* Configurações dos botões do menu fixo no top do site */
+.btn {
+  color: var(--Cinza);
+  background-color: var(--Cinza-Claro);
+  border-color: var(--Cinza-Claro);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: var(--laranja);
+  border-color: var(--laranja);
+}
+
+/* Logo da pagina home */
+.logo {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding: 18rem 0rem 7rem 6rem;
+}
+
+/* Aqui começa a página de contato. */
+.imgMenino {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+}
+
+.faleconosco {
+  color: #555652;
+  text-align: center;
+  font-weight: 200;
+}
+
+label {
+  display: flex;
+  color: #555652;
+  margin: 0.1rem;
+}
+
+fieldset {
+  border: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #555652;
+  height: 30px;
+}
+
+::placeholder {
+  color: var(--Cinza);
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+#cidade {
+  width: 60%;
+}
+
+.cidade {
+  display: flex;
+}
+
+#txtMensagem {
+  height: 6rem;
+}
+
+.enviar {
+  width: 20%;
+  margin: 10px;
+  padding: 5px;
+  background-color: #555652;
+  color: #f0f0eb;
+  border-radius: 5px;
+}
+
+.enviar:hover {
+  width: 20%;
+  margin: 10px;
+  padding: 5px;
+  color: #f0f0eb;
+  border-radius: 5px;
+  background-color: #f56154;
+}
+
+button {
+  align-items: center;
+  border: none;
+}
+.btnEnviar {
+  text-align: center;
+}
+
+/* Aqui começa o rodapé. */
+footer {
+  padding: 0;
+}
+
+.footerIcons {
+  border-top: 1px solid white;
+  background-color: #40c5a1;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+}
+
+.copy {
+  display: flex;
+  color: #f0f0eb;
+  padding: 5px 0px 5px 20px;
+}
+
+.rodape {
+  margin-right: 25px;
+}
+
+.icons {
+  padding: 5px;
+  width: 30px;
+}
