@@ -275,3 +275,13 @@ section {
     margin: 0 10px;
   }
 }
+
+.text-carousel {
+  font-family: "Lato";
+  color: var(--Cinza);
+}
+
+.img-carousel {
+  justify-content: center;
+  margin: auto;
+}

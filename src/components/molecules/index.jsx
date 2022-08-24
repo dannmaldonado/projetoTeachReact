@@ -1,3 +1,3 @@
-import Carousel from "./Carousel";
+import Carousel from "../molecules/Carousel";
 
 export { Carousel };

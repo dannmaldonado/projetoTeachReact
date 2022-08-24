@@ -1,7 +1,12 @@
 import React from "react";
 import Default from "../templates/Default";
-//import Carousel from "../molecules/index";
 
-export default function Home() {
-  return <Default>{/* <Carousel /> */}</Default>;
+import Carousel from "../molecules/Carousel";
+
+export default function Depoimentos() {
+  return (
+    <Default>
+      <div>{<Carousel />}</div>
+    </Default>
+  );
 }
