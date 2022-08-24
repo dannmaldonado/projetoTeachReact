@@ -6,7 +6,6 @@ import Depoimentos from "./components/pages/Depoimentos";
 import Login from "./components/pages/Login";
 
 import "./style/style.css";
-import "./style/style1.css";
 
 function App() {
   return (

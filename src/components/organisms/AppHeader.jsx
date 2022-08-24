@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../../logo/LogoMenu.png";
 
@@ -6,7 +7,7 @@ export default function AppHeader() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light navbar-cunstom">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src={logo} alt="" width="80%" height="" />
         </a>
 
@@ -28,42 +29,42 @@ export default function AppHeader() {
         >
           <ul className="navbar-nav">
             <li>
-              <a href="#" className="nav-link px-2 link-secondary">
+              <Link to="/" className="nav-link px-2 link-secondary">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="" className="nav-link px-2 link-dark">
                 Soluções e Recursos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="/depoimentos" className="nav-link px-2 link-dark">
                 Clientes
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="#" className="nav-link px-2 link-dark">
                 Planos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="#" className="nav-link px-2 link-dark">
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="/contato/" className="nav-link px-2 link-dark">
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
 
           <div className="navbar-nav">
             <li>
-              <a href="login.html" className="nav-link px-2 link-dark">
+              <Link to="/login/" className="nav-link px-2 link-dark">
                 Login
-              </a>
+              </Link>
             </li>
           </div>
         </div>
