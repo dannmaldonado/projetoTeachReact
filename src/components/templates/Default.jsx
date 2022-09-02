@@ -4,7 +4,7 @@ import { AppHeader, AppFooter } from "../organisms";
 
 export default function Default(props) {
   return (
-    <div className="wrapper">
+    <div className="container-fluid">
       <AppHeader />
       {props.children}
       <AppFooter />

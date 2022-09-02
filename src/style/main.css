@@ -1,21 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 *,
-*::before,
-*::after {
-  text-decoration: none;
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
-/* Fonte */
-@font-face {
-  font-family: "Lato";
-  src: url(../Fonts/Lato/Lato-Regular.ttf);
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
 }
 
-/* Reset CSS e Font do Body*/
 body {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  font-family: "Lato";
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: #000;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 /* Padrão de cores do Site */
@@ -34,21 +42,35 @@ body {
   --Areia: rgba(240, 240, 235); /* #f0f0eb; */
 }
 
-/* Plano de fundo da página inicial*/
-.home {
-  background: url(../imagens/Fundo\ Home.jpg) top no-repeat;
+/* Alinhamento */
+
+.center {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 /* Header ******************************************** */
 
 nav {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
 }
 
 /* Configuração da cor do fundo do menu superior*/
 .navbar-cunstom {
   background-color: var(--Areia);
+}
+
+.navbar-brand {
+  margin-left: 1rem;
 }
 
 /* Configurações dos botões do menu fixo no top do site */
@@ -67,6 +89,49 @@ nav {
   border-color: var(--laranja);
 }
 
+/* Footer ******************************************** */
+
+footer {
+  display: flex;
+  margin-top: auto;
+}
+
+p {
+  margin: 0;
+  color: var(--Areia);
+}
+
+.footerIcons {
+  background-color: #40c5a1;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  padding: 5px;
+  width: 30px;
+}
+
+.rodape {
+  margin-right: 1rem;
+}
+
+.copy {
+  display: flex;
+  color: #f0f0eb;
+  padding: 5px 0px 5px 20px;
+}
+
+/* Home - Plano de fundo da página inicial ************************************** */
+
+.home {
+  height: 100vh;
+  background: url(../imagens/Fundo\ Home.jpg) top no-repeat;
+}
+
 /* Logo da pagina home */
 .logo {
   width: 90%;
@@ -76,17 +141,17 @@ nav {
   padding: 18rem 0rem 7rem 6rem;
 }
 
-/* Aqui começa a página de contato. */
+/* Aqui começa a página de contato. ******************************** */
+
 .imgMenino {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 5.5rem;
   margin-bottom: 0;
   width: 90%;
-  /* padding: 2rem; */
 }
 
 .faleconosco {
-  margin-top: 5.5rem;
+  margin-top: 5rem;
   color: #555652;
   text-align: center;
   font-weight: 200;
@@ -155,42 +220,7 @@ button {
   text-align: center;
 }
 
-/* Aqui começa o rodapé. */
-footer {
-  padding: 0;
-}
-
-.footerIcons {
-  border-top: 1px solid white;
-  background-color: #40c5a1;
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-p {
-  margin: 0;
-  color: var(--Areia);
-}
-
-.copy {
-  display: flex;
-  color: #f0f0eb;
-  padding: 5px 0px 5px 20px;
-}
-
-/* .rodape {
-  margin-right: 25px;
-} */
-
-.icons {
-  padding: 5px;
-  width: 30px;
-}
-
-/* Início da página de Login */
+/* Início da página de Login ****************************** */
 
 ul li {
   list-style-type: none;
@@ -199,7 +229,7 @@ ul li {
 .grid {
   display: grid;
   grid-template-columns: 1fr 400px;
-  grid-gap: 20px;
+  grid-gap: 4rem;
   max-width: 800px;
   padding: 120px;
   margin: 0 auto;
@@ -259,11 +289,10 @@ a:hover {
 }
 
 section {
-  /* height: 91vh; */
+  height: 100vh;
   text-align: center;
   font-size: 16px;
   color: var(--Cinza);
-  /* padding: 1rem; */
 }
 
 @media (max-width: 600px) {

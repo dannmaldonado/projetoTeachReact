@@ -5,7 +5,7 @@ import Contato from "./components/pages/Contato";
 import Depoimentos from "./components/pages/Depoimentos";
 import Login from "./components/pages/Login";
 
-import "./style/style.css";
+import "./style/main.css";
 
 function App() {
   return (

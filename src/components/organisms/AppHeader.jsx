@@ -62,7 +62,7 @@ export default function AppHeader() {
 
           <div className="navbar-nav">
             <li>
-              <Link to="/login/" className="nav-link px-2 link-dark">
+              <Link to="/login/" className="nav-link link-dark">
                 Login
               </Link>
             </li>

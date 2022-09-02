@@ -6,7 +6,7 @@ import logo from "../../logo/Logo.png";
 export default function Home() {
   return (
     <Default>
-      <section className="home container-fluid">
+      <section className="home">
         <div className="logo">
           <img
             className="img-fluid"
