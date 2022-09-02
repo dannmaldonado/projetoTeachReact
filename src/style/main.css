@@ -128,7 +128,7 @@ p {
 /* Home - Plano de fundo da página inicial ************************************** */
 
 .home {
-  height: 100vh;
+  height: 92.5vh;
   background: url(../imagens/Fundo\ Home.jpg) top no-repeat;
 }
 
@@ -289,7 +289,7 @@ a:hover {
 }
 
 section {
-  height: 100vh;
+  height: 92.5vh;
   text-align: center;
   font-size: 16px;
   color: var(--Cinza);
