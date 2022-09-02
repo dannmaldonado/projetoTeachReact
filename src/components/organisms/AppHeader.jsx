@@ -40,11 +40,11 @@ export default function AppHeader() {
             </li>
             <li>
               <Link to="/depoimentos" className="nav-link px-2 link-dark">
-                Clientes
+                Depoimentos
               </Link>
             </li>
             <li>
-              <Link to="#" className="nav-link px-2 link-dark">
+              <Link to="/planos" className="nav-link px-2 link-dark">
                 Planos
               </Link>
             </li>
@@ -54,7 +54,7 @@ export default function AppHeader() {
               </Link>
             </li>
             <li>
-              <Link to="/contato/" className="nav-link px-2 link-dark">
+              <Link to="/contato" className="nav-link px-2 link-dark">
                 Contato
               </Link>
             </li>

@@ -6,7 +6,7 @@ import Carousel from "../molecules/Carousel";
 export default function Depoimentos() {
   return (
     <Default>
-      <div>{<Carousel />}</div>
+      <Carousel></Carousel>
     </Default>
   );
 }

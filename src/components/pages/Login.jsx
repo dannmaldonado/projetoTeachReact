@@ -1,5 +1,6 @@
 import React from "react";
 import Default from "../templates/Default";
+import { Login } from "../molecules/index";
 
 import logo from "../../logo/Logo.png";
 
@@ -17,7 +18,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div>
+          <Login></Login>
+
+          {/* <div>
             <p className="login">Faça seu login na Teach</p>
             <div className="form-floating mb-3">
               <input
@@ -53,7 +56,7 @@ export default function Home() {
                 É novo por aqui? <a href="#">Cadastre-se</a>
               </h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </Default>

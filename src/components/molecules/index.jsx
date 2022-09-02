@@ -1,3 +1,6 @@
-import Carousel from "../molecules/Carousel";
+import Carousel from "./Carousel";
+import Login from "./Login";
+import Planos from "./Planos";
+import Contato from "./Contato";
 
-export { Carousel };
+export { Carousel, Login, Planos, Contato };
