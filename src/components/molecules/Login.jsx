@@ -13,6 +13,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+import LogoLivro from "../../Icons/open-book.png";
+
 const theme = createTheme();
 
 export default function SignIn() {
@@ -37,7 +39,7 @@ export default function SignIn() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "warning.main" }}>
+          <Avatar src={LogoLivro}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">

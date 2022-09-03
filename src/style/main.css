@@ -1,7 +1,11 @@
+/* Font padrão */
+
 @font-face {
   font-family: Lato;
   src: url("../Fonts/Lato/Lato-Regular.ttf");
 }
+
+/* Reset do CSS */
 
 *,
 *:after,
@@ -30,6 +34,7 @@ body {
 }
 
 /* Padrão de cores do Site */
+
 :root {
   --verde: rgba(64, 197, 161); /* #40c5a1; */
   --verdeTranspa: rgba(
