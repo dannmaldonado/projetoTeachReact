@@ -1,8 +1,9 @@
 /* Font padrão */
 
 @font-face {
-  font-family: Lato;
+  font-family: "Lato" "Lato Bold";
   src: url("../Fonts/Lato/Lato-Regular.ttf");
+  src: url("../Fonts/Lato/Lato-Bold.ttf");
 }
 
 /* Reset do CSS */
@@ -24,7 +25,7 @@ html {
 body {
   height: 100%;
   font-family: "Lato", sans-serif;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #000;
   overflow-x: hidden;
 }

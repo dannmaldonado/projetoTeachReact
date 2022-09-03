@@ -80,7 +80,6 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              className=""
             >
               Entrar
             </Button>
@@ -91,7 +90,7 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/planos" variant="body2">
                   {"Não tem uma conta? Inscreva-se"}
                 </Link>
               </Grid>

@@ -20,12 +20,12 @@ const tiers = [
       "Central de Ajuda",
       "Email de suporte",
     ],
-    buttonText: "Sign up for free",
+    buttonText: "Começe de Graça",
     buttonVariant: "outlined",
   },
   {
     title: "Pro",
-    subheader: "Most popular",
+    subheader: "Mais Popular",
     price: "149",
     description: [
       "20 usuários incluidos",
@@ -33,7 +33,7 @@ const tiers = [
       "Central de Ajuda",
       "Email de suporte",
     ],
-    buttonText: "Get started",
+    buttonText: "Mais Popular",
     buttonVariant: "contained",
   },
   {
