@@ -56,7 +56,7 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Email"
               name="email"
               autoComplete="email"
               autoFocus
@@ -66,32 +66,33 @@ export default function SignIn() {
               required
               fullWidth
               name="password"
-              label="Password"
+              label="Senha"
               type="password"
               id="password"
               autoComplete="current-password"
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
+              label="Lembre de mim"
             />
             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              className=""
             >
-              Sign In
+              Entrar
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Forgot password?
+                  Esqueceu a senha?
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Não tem uma conta? Inscreva-se"}
                 </Link>
               </Grid>
             </Grid>

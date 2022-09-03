@@ -1,13 +1,5 @@
-.avatar-color {
-  color: var(--laranja);
-}
-
 ul li {
   list-style-type: none;
-}
-
-.css-binzgt {
-  margin-top: 0;
 }
 
 .grid {
@@ -96,4 +88,9 @@ a:hover {
 .img-carousel {
   justify-content: center;
   margin: auto;
+}
+
+.btn-mui {
+  color: var(--Areia);
+  background-color: var(--laranja);
 }
