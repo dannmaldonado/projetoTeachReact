@@ -6,7 +6,7 @@ export default function AppHome() {
   return (
     <section className="row">
       <div className="col-sm-12 col-lg-5">
-        <p className="center text-sobre">
+        <p className="text-sobre">
           A Teach oferece soluções <br></br> complementares de acordo com{" "}
           <br></br> o momento da sua escola!
         </p>

@@ -68,7 +68,7 @@ function PricingContent() {
           color="text.primary"
           gutterBottom
         >
-          Preços
+          Planos
         </Typography>
         <Typography
           fontFamily={"Lato"}
