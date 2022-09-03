@@ -26,7 +26,7 @@ const tiers = [
   {
     title: "Pro",
     subheader: "Most popular",
-    price: "150",
+    price: "149",
     description: [
       "20 usuários incluidos",
       "10 GB de armazenamento",
@@ -38,7 +38,7 @@ const tiers = [
   },
   {
     title: "Enterprise",
-    price: "300",
+    price: "349",
     description: [
       "50 usuários incluidos",
       "30 GB de armazenamento",
@@ -61,6 +61,7 @@ function PricingContent() {
         sx={{ pt: 8, pb: 6 }}
       >
         <Typography
+          fontFamily={"Lato"}
           component="h2"
           variant="h3"
           align="center"
@@ -70,6 +71,7 @@ function PricingContent() {
           Preços
         </Typography>
         <Typography
+          fontFamily={"Lato"}
           variant="h6"
           align="center"
           color="text.secondary"
@@ -118,14 +120,15 @@ function PricingContent() {
                     }}
                   >
                     <Typography
+                      fontFamily={"Lato"}
                       component="h2"
                       variant="h3"
                       color="text.primary"
                     >
-                      ${tier.price}
+                      R${tier.price}
                     </Typography>
                     <Typography variant="h6" color="text.secondary">
-                      /mo
+                      /mês
                     </Typography>
                   </Box>
                   <ul>
