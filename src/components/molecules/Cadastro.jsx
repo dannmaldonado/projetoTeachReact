@@ -13,7 +13,11 @@ export default function contato() {
         />
       </div>
 
-      <form id="formContato" className="col-sm-12 col-lg-6" action="">
+      <form
+        id="formContato"
+        className="col-sm-12 col-lg-6 cadastroAlign"
+        action=""
+      >
         <fieldset className="">
           <h2 className="cadastro">Cadastro</h2>
 
