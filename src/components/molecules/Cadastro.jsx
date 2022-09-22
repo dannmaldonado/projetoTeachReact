@@ -4,18 +4,18 @@ import imgCadastro from "../../imagens/cadastro.png";
 
 export default function contato() {
   return (
-    <section className="contato row">
-      <div className="menino col-sm-12 col-lg-6">
+    <section className="cadastro row cadastroAlign">
+      <div className="cadastro col-sm-12 col-lg-6">
         <img
-          className="imgMenino"
+          className="imgCadastro"
           src={imgCadastro}
-          alt="Ilustarção de um menino de cor parda com uma camiseta verde em uma sala de aula com a mão esquerda levantada pedindo ajuda."
+          alt="Ilustarção de um mulher de cor branca com uma camiseta laranja ao lado de um notebook com a tela de cadastro aberta."
         />
       </div>
 
       <form id="formContato" className="col-sm-12 col-lg-6" action="">
         <fieldset className="">
-          <h2 className="faleconosco">Cadastro</h2>
+          <h2 className="cadastro">Cadastro</h2>
 
           <div className="form-floating mb-3">
             <input
@@ -39,19 +39,9 @@ export default function contato() {
 
           <div className="form-floating mb-3">
             <input
-              type="tel"
-              className="form-control"
-              id="txtFone"
-              placeholder="(00) 00000-0000"
-            />
-            <label for="floatingInput">Telefone:</label>
-          </div>
-
-          <div className="form-floating mb-3">
-            <input
               type="text"
               className="form-control"
-              id="txtCidade"
+              id="txtCpf"
               placeholder="Digite seu CPF"
             />
             <label for="floatingInput">Cpf:</label>
@@ -60,14 +50,14 @@ export default function contato() {
             <input
               type="text"
               className="form-control"
-              id="txtCidade"
+              id="txtSenha"
               placeholder="Senha"
             />
             <label for="floatingInput">Senha:</label>
           </div>
 
-          <div className="btnEnviar">
-            <button id="btnEnviar" className="enviar">
+          <div className="btnCadastrar">
+            <button id="btnCadastrar" className="enviar">
               Cadastrar
             </button>
           </div>

@@ -15,6 +15,7 @@ import "./style/home.css";
 import "./style/contato.css";
 import "./style/login.css";
 import "./style/sobre.css";
+import "./style/cadastro.css";
 
 function App() {
   return (
