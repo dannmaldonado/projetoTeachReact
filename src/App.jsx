@@ -6,6 +6,7 @@ import Depoimentos from "./components/pages/Depoimentos";
 import Login from "./components/pages/Login";
 import Planos from "./components/pages/Planos";
 import Sobre from "./components/pages/Sobre";
+import Cadastro from "./components/pages/Cadastro";
 
 import "./style/main.css";
 import "./style/header.css";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/planos" element={<Planos />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/cadastro" element={<Cadastro />} />
       </Routes>
     </BrowserRouter>
   );

@@ -33,11 +33,7 @@ export default function AppHeader() {
                 Home
               </Link>
             </li>
-            {/* <li>
-              <Link to="" className="nav-link px-2 link-dark">
-                Soluções e Recursos
-              </Link>
-            </li> */}
+
             <li>
               <Link to="/depoimentos" className="nav-link px-2 link-dark">
                 Depoimentos
@@ -56,6 +52,11 @@ export default function AppHeader() {
             <li>
               <Link to="/contato" className="nav-link px-2 link-dark">
                 Contato
+              </Link>
+            </li>
+            <li>
+              <Link to="/cadastro" className="nav-link px-2 link-dark">
+                Cadastro
               </Link>
             </li>
           </ul>
