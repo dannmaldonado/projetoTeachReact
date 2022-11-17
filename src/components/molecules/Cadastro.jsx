@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/cadastro.css";
 
 import imgCadastro from "../../imagens/cadastro.png";
 

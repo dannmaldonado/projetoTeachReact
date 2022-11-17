@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/home.css";
 
 import logo from "../../logo/Logo.png";
 

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/contato.css";
 
 import imgMenino from "../../imagens/imgMenino.png";
 

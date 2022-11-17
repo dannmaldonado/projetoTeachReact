@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/sobre.css";
 
 import Professora from "../../imagens/professora.png";
 

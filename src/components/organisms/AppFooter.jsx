@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/footer.css";
 
 import envolope from "../../Icons/envelope.png";
 import whatsapp from "../../Icons/whatsapp.png";
