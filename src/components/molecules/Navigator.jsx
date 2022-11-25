@@ -10,13 +10,14 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
-import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
 import TimerIcon from '@mui/icons-material/Timer';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
+
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EventNoteIcon from '@mui/icons-material/EventNote';
+import SchoolIcon from '@mui/icons-material/School';
 
 const categories = [
   {
@@ -28,12 +29,12 @@ const categories = [
         active: true,
       },
       { id: 'Turmas', icon: <DnsRoundedIcon /> },
-      { id: 'Notas', icon: <PermMediaOutlinedIcon /> },
-      { id: 'Horário de Aulas', icon: <PublicIcon /> },
-      { id: 'Calendário', icon: <SettingsEthernetIcon /> },
+      { id: 'Notas', icon: <EventNoteIcon /> },
+      { id: 'Horário de Aulas', icon: <AccessTimeIcon /> },
+      { id: 'Calendário', icon: <CalendarMonthIcon /> },
       {
-        id: 'Turmas',
-        icon: <SettingsInputComponentIcon />,
+        id: 'Professores',
+        icon: <SchoolIcon />,
       },
     ],
   },
