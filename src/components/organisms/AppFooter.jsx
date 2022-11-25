@@ -10,7 +10,7 @@ import marker from "../../Icons/marker.png";
 
 export default function AppFooter() {
   return (
-    <footer className="row">
+    <footer className="row mt-auto">
       <div className="footerIcons">
         <div className="copy">
           <p>© 2022 Teach - Todos os direitos reservados</p>
