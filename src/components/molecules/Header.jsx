@@ -50,7 +50,7 @@ function Header(props) {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Ir para documentos
+                Sair
               </Link>
             </Grid>
             <Grid item>
