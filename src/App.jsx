@@ -8,6 +8,8 @@ import Planos from "./components/pages/Planos";
 import Sobre from "./components/pages/Sobre";
 import Cadastro from "./components/pages/Cadastro";
 
+import Dashboard from "./components/pages/Dashboard";
+
 import "./style/main.css";
 
 
@@ -22,6 +24,7 @@ function App() {
         <Route path="/planos" element={<Planos />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );

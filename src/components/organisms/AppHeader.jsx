@@ -34,17 +34,17 @@ export default function AppHeader() {
                 Home
               </Link>
             </li>
-
-            <li>
-              <Link to="/depoimentos" className="nav-link px-2 link-dark">
-                Depoimentos
-              </Link>
-            </li>
             <li>
               <Link to="/planos" className="nav-link px-2 link-dark">
                 Planos
               </Link>
             </li>
+            <li>
+              <Link to="/depoimentos" className="nav-link px-2 link-dark">
+                Depoimentos
+              </Link>
+            </li>
+
             <li>
               <Link to="/sobre" className="nav-link px-2 link-dark">
                 Sobre
@@ -55,14 +55,15 @@ export default function AppHeader() {
                 Contato
               </Link>
             </li>
+          </ul>
+
+          <div className="navbar-nav">
             <li>
               <Link to="/cadastro" className="nav-link px-2 link-dark">
                 Cadastro
               </Link>
             </li>
-          </ul>
-
-          <div className="navbar-nav">
+            <span class="nav-link"> | </span>
             <li>
               <Link to="/login/" className="nav-link link-dark">
                 Login

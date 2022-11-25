@@ -1,73 +1,111 @@
-import React from "react";
-import "../../style/cadastro.css";
+import * as React from "react";
+import "../../style/login.css";
 
-import imgCadastro from "../../imagens/cadastro.png";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-export default function contato() {
+import LogoLivro from "../../Icons/open-book.png";
+
+const theme = createTheme();
+
+export default function Cadastro() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
+  };
+
   return (
-    <section className="cadastro row cadastroAlign">
-      <div className="cadastro col-sm-12 col-lg-6">
-        <img
-          className="imgCadastro"
-          src={imgCadastro}
-          alt="Ilustarção de um mulher de cor branca com uma camiseta laranja ao lado de um notebook com a tela de cadastro aberta."
-        />
-      </div>
-
-      <form
-        id="formContato"
-        className="col-sm-12 col-lg-6 cadastroAlign"
-        action=""
-      >
-        <fieldset className="">
-          <h2 className="cadastro">Cadastro</h2>
-
-          <div className="form-floating mb-3">
-            <input
-              type="text"
-              className="form-control"
-              id="txtNome"
-              placeholder="Digite seu nome completo aqui"
+    <ThemeProvider theme={theme}>
+      <Container component="main" maxWidth="xs">
+        <CssBaseline />
+        <Box
+          sx={{
+            marginTop: 8,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Avatar src={LogoLivro}>
+            <LockOutlinedIcon />
+          </Avatar>
+          <Typography component="h1" variant="h5">
+            Sign in
+          </Typography>
+          <Box
+            component="form"
+            onSubmit={handleSubmit}
+            noValidate
+            sx={{ mt: 1 }}
+          >
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="name"
+              label="Nome"
+              name="name"
+              autoComplete="name"
+              autoFocus
             />
-            <label for="floatingInput">Nome:</label>
-          </div>
-
-          <div className="form-floating mb-3">
-            <input
-              type="email"
-              className="form-control"
-              id="txtEmail"
-              placeholder="seu@email.com"
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="email"
+              label="Email"
+              name="email"
+              autoComplete="email"
+              autoFocus
             />
-            <label for="floatingInput">Email:</label>
-          </div>
-
-          <div className="form-floating mb-3">
-            <input
-              type="text"
-              className="form-control"
-              id="txtCpf"
-              placeholder="Digite seu CPF"
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Senha"
+              type="password"
+              id="password"
+              autoComplete="current-password"
             />
-            <label for="floatingInput">Cpf:</label>
-          </div>
-          <div className="form-floating mb-3">
-            <input
-              type="text"
-              className="form-control"
-              id="txtSenha"
-              placeholder="Senha"
+            <FormControlLabel
+              control={<Checkbox value="remember" color="primary" class="check"/>}
+              label="Lembre de mim"
             />
-            <label for="floatingInput">Senha:</label>
-          </div>
-
-          <div className="btnCadastrar">
-            <button id="btnCadastrar" className="enviar">
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+              class="btn-mui"
+            >
               Cadastrar
-            </button>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+            </Button>
+            <Grid container>
+              <Grid item>
+                <Link class="btnLink" href="/login" variant="body2">
+                  {"Já tem uma conta? Entre"}
+                </Link>
+              </Grid>
+            </Grid>
+          </Box>
+        </Box>
+      </Container>
+    </ThemeProvider>
   );
 }

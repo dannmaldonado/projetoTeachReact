@@ -69,3 +69,13 @@ button {
 .btnCadastrar {
   text-align: center;
 }
+
+.btnLink{
+  background-color: #f56154;
+  color: #f0f0eb;
+  text-decoration: underline #f56154;
+}
+
+.check{
+  color: #40c5a1;
+}

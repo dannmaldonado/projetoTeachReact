@@ -74,7 +74,7 @@ export default function SignIn() {
               autoComplete="current-password"
             />
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={<Checkbox value="remember" color="primary"/>}
               label="Lembre de mim"
             />
             <Button
@@ -82,17 +82,18 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              class="btn-mui"
             >
               Entrar
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body2" class="btnLink">
                   Esqueceu a senha?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/planos" variant="body2">
+                <Link href="/planos" variant="body2" class="btnLink">
                   {"Não tem uma conta? Inscreva-se"}
                 </Link>
               </Grid>
