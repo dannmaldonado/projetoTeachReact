@@ -28,7 +28,7 @@ export default function Content() {
             <Grid item xs>
               <TextField
                 fullWidth
-                placeholder="Search by email address, phone number, or user UID"
+                placeholder="Pesquise por endereço de e-mail, número de telefone ou ID do usuário"
                 InputProps={{
                   disableUnderline: true,
                   sx: { fontSize: 'default' },
