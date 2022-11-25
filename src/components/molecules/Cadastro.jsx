@@ -45,7 +45,7 @@ export default function Cadastro() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Cadastro
           </Typography>
           <Box
             component="form"
