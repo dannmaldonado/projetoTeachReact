@@ -63,7 +63,7 @@ export default function AppHeader() {
                 Cadastro
               </Link>
             </li>
-            <span class="nav-link"> | </span>
+            <span className="nav-link"> | </span>
             <li>
               <Link to="/login/" className="nav-link link-dark">
                 Login

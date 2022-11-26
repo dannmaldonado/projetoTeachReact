@@ -82,18 +82,19 @@ export default function SignIn() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              class="btn-mui"
+              className="btn-mui"
+              href="/dashboard"
             >
               Entrar
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2" class="btnLink">
+                <Link href="#" variant="body2" className="btnLink">
                   Esqueceu a senha?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/planos" variant="body2" class="btnLink">
+                <Link href="/planos" variant="body2" className="btnLink">
                   {"Não tem uma conta? Inscreva-se"}
                 </Link>
               </Grid>

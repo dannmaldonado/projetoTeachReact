@@ -13,6 +13,10 @@ nav {
   margin-left: 1rem;
 }
 
+.navbar-nav{
+  margin-right: 1rem;
+}
+
 /* Configurações dos botões do menu fixo no top do site */
 .btn {
   color: var(--Cinza);

@@ -28,7 +28,7 @@ export default function Content() {
             <Grid item xs>
               <TextField
                 fullWidth
-                placeholder="Pesquise por endereço de e-mail, número de telefone ou ID do usuário"
+                placeholder="Pesquise por endereço de e-mail, número de telefone ou ID do aluno"
                 InputProps={{
                   disableUnderline: true,
                   sx: { fontSize: 'default' },
@@ -38,7 +38,7 @@ export default function Content() {
             </Grid>
             <Grid item>
               <Button variant="contained" sx={{ mr: 1 }}>
-                Novo Usuário
+                Novo Aluno
               </Button>
               <Tooltip title="Reload">
                 <IconButton>
@@ -50,7 +50,7 @@ export default function Content() {
         </Toolbar>
       </AppBar>
       <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
-        Ainda não há usuários para este projeto
+        Ainda não há alunos cadastrados para esta turma
       </Typography>
     </Paper>
   );

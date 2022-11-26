@@ -8,7 +8,7 @@ import Carousel from "../molecules/Carousel";
 export default function Depoimentos() {
   return (
     <Default>
-      <div class="carouselDepoimentos">
+      <div className="carouselDepoimentos">
         <Carousel></Carousel>
       </div>
     </Default>

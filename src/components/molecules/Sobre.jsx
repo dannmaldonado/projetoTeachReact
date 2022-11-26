@@ -8,8 +8,8 @@ export default function AppHome() {
     <section className="row">
       <div className="col-sm-12 col-lg-5">
         <p className="text-sobre">
-          A Teach oferece soluções <br></br> complementares de acordo com{" "}
-          <br></br> o momento da sua escola!
+          A Teach <br></br> oferece soluções complementas 
+          <br></br> para digitalizar sua escola!
         </p>
       </div>
 

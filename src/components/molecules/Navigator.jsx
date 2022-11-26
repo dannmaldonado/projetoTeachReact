@@ -24,7 +24,7 @@ const categories = [
     id: 'Administrativo',
     children: [
       {
-        id: 'Usuários',
+        id: 'Alunos',
         icon: <PeopleIcon />,
         active: true,
       },

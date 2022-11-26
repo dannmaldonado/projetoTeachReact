@@ -145,7 +145,7 @@ function PricingContent() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant}>
+                  <Button fullWidth variant={tier.buttonVariant} href="/cadastro">
                     {tier.buttonText}
                   </Button>
                 </CardActions>
