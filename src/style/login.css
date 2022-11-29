@@ -67,7 +67,7 @@ a:hover {
   }
 
   .logo-login {
-    display: flex;
+    margin-top: 2rem;
     overflow: scroll;
   }
 

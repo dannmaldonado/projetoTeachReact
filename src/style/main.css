@@ -77,6 +77,6 @@ section {
 
 /* Ajuste de cor textos pagina Sobre */
 
-h2, li, span, svg {
+h2 {
   color: #555652 !important;
 }

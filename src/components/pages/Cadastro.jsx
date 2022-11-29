@@ -16,7 +16,7 @@ export default function AppCadastro() {
             height="150"
           />
         </div>
-        <div>
+        <div className="min-largura">
           <Cadastro></Cadastro>
         </div>
       </section>

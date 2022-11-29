@@ -10,6 +10,8 @@ import StarIcon from "@mui/icons-material/StarBorder";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
+import "../../style/planos.css";
+
 const tiers = [
   {
     title: "Free",

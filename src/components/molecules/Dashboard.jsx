@@ -120,7 +120,7 @@ theme = {
     MuiDivider: {
       styleOverrides: {
         root: {
-          backgroundColor: '#555651',
+          backgroundColor: 'rgb(255,255,255,0.15)',
         },
       },
     },
