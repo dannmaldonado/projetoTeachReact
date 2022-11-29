@@ -74,3 +74,9 @@ section {
   font-size: 16px;
   color: var(--Cinza);
 }
+
+/* Ajuste de cor textos pagina Sobre */
+
+h2, li, span, svg {
+  color: #555652 !important;
+}

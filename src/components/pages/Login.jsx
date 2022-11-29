@@ -15,7 +15,7 @@ export default function Home() {
                         height="150"/>
                 </div>
 
-                <div>
+                <div className="min-largura">
                     <Login></Login>
                 </div>
             </section>

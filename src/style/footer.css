@@ -3,6 +3,10 @@ footer {
   margin-top: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   margin: 0;
   color: var(--Areia);
