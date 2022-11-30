@@ -2,6 +2,7 @@ import React from "react";
 import Default from "../templates/Default";
 
 import Planos from "../molecules/Planos";
+import Whats from "../atoms/whats";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <section className="center">
         <Planos></Planos>
       </section>
+      <Whats></Whats>
     </Default>
   );
 }

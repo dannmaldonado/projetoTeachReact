@@ -1,6 +1,7 @@
 import React from "react";
 import Default from "../templates/Default";
 import { Cadastro } from "../molecules";
+import Whats from "../atoms/whats";
 
 import logo from "../../logo/Logo.png";
 
@@ -20,6 +21,7 @@ export default function AppCadastro() {
           <Cadastro></Cadastro>
         </div>
       </section>
+      <Whats></Whats>
     </Default>
   );
 }

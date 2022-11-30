@@ -1,5 +1,6 @@
 import React from "react";
 import Default from "../templates/Default";
+import Whats from "../atoms/whats";
 
 import "../../style/carousel.css"
 
@@ -11,6 +12,7 @@ export default function Depoimentos() {
       <div className="carouselDepoimentos">
         <Carousel></Carousel>
       </div>
+      <Whats></Whats>
     </Default>
   );
 }

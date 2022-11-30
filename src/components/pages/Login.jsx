@@ -1,6 +1,7 @@
 import React from "react";
 import Default from "../templates/Default";
 import {Login} from "../molecules/index";
+import Whats from "../atoms/whats";
 
 import logo from "../../logo/Logo.png";
 
@@ -19,6 +20,7 @@ export default function Home() {
                     <Login></Login>
                 </div>
             </section>
+            <Whats></Whats>
         </Default>
     );
 }
