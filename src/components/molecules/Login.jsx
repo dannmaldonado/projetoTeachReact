@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import "../../style/login.css";
 
 import Avatar from "@mui/material/Avatar";
@@ -17,15 +17,41 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import LogoLivro from "../../Icons/open-book.png";
 
+import { useState } from 'react';
+import UserPool from "../../UserPool";
+
+import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js"; 
+
+
 const theme = createTheme();
 
-export default function SignIn() {
-  const handleSubmit = (event) => {
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
+
+    const user = new CognitoUser({
+      Username: email,
+      Pool: UserPool,
+    });
+    
+    const authDetails = new AuthenticationDetails({
+      Username: email,
+      Password: password,
+    })
+
+    user.authenticateUser(authDetails, {
+      onSuccess: (data) => {
+        console.log("onSuccess: ", data);
+      },
+      onFailure: (err) => {
+        console.error("onFailure :", err);
+      },
+      newPasswordRequired: (data) => {
+        console.log("newPasswordRequired: ", data);
+      }
     });
   };
 
@@ -49,7 +75,7 @@ export default function SignIn() {
           </Typography>
           <Box
             component="form"
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
             noValidate
             sx={{ mt: 1 }}
           >
@@ -62,6 +88,8 @@ export default function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             />
             <TextField
               margin="normal"
@@ -72,6 +100,8 @@ export default function SignIn() {
               type="password"
               id="password"
               autoComplete="current-password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary"/>}
@@ -83,7 +113,7 @@ export default function SignIn() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               className="btn-mui"
-              href="/dashboard"
+              href=""
             >
               Entrar
             </Button>
@@ -104,4 +134,6 @@ export default function SignIn() {
       </Container>
     </ThemeProvider>
   );
-}
+} 
+
+export default Login;
