@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -9,25 +10,30 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { useState } from 'react';
 import UserPool from "../../UserPool";
+import { useNavigate } from 'react-router-dom';
 
 import LogoLivro from "../../Icons/open-book.png";
 
 
 const theme = createTheme();
 
+
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const onSubmit = (event) => {
     event.preventDefault();
+
+    
 
     UserPool.signUp(email, password, [], null, (err, data) => {
       if (err) {
@@ -94,8 +100,7 @@ const SignUp = () => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              className="btn-mui"
-              href=''
+              onClick={() => navigate("/dashboard")}
             >
               Cadastrar
             </Button>

@@ -25,7 +25,7 @@ export default function contato() {
               id="txtNome"
               placeholder="Digite seu nome completo aqui"
             />
-            <label for="floatingInput">Nome:</label>
+            <label htmlFor="floatingInput">Nome:</label>
           </div>
 
           <div className="form-floating mb-3">
@@ -35,7 +35,7 @@ export default function contato() {
               id="txtEmail"
               placeholder="seu@email.com"
             />
-            <label for="floatingInput">Email:</label>
+            <label htmlFor="floatingInput">Email:</label>
           </div>
 
           <div className="form-floating mb-3">
@@ -45,12 +45,12 @@ export default function contato() {
               id="txtFone"
               placeholder="(00) 00000-0000"
             />
-            <label for="floatingInput">Telefone:</label>
+            <label htmlFor="floatingInput">Telefone:</label>
           </div>
 
           <div className="form-floating mb-3 ddlUF">
             <select className="form-control" id="ddlUF" name="ddlUF">
-              <option value="" selected="selected">
+              <option value="" select="selected">
                 Selecione
               </option>
               <option value="AC">Acre</option>
@@ -82,7 +82,7 @@ export default function contato() {
               <option value="TO">Tocantins</option>
               <option value="EX">Estrangeiro</option>
             </select>
-            <label for="floatingInput">Estado:</label>
+            <label htmlFor="floatingInput">Estado:</label>
           </div>
 
           <div className="form-floating mb-3">
@@ -92,7 +92,7 @@ export default function contato() {
               id="txtCidade"
               placeholder="Digite sua cidade"
             />
-            <label for="floatingInput">Cidade:</label>
+            <label htmlFor="floatingInput">Cidade:</label>
           </div>
 
           <div className="form-floating mb-3">
@@ -102,7 +102,7 @@ export default function contato() {
               id="txtMotivo"
               placeholder="Como podemos ajudar?"
             />
-            <label for="floatingInput">Motivo:</label>
+            <label htmlFor="floatingInput">Motivo:</label>
           </div>
 
           <div className="form-floating mb-3">
@@ -112,7 +112,7 @@ export default function contato() {
               id="txtMensagem"
               placeholder="Digite aqui sua mensagem"
             />
-            <label for="floatingInput">Mensagem:</label>
+            <label htmlFor="floatingInput">Mensagem:</label>
           </div>
 
           <div className="btnEnviar">

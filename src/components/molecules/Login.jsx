@@ -19,6 +19,7 @@ import LogoLivro from "../../Icons/open-book.png";
 
 import { useState } from 'react';
 import UserPool from "../../UserPool";
+import { useNavigate } from 'react-router-dom';
 
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js"; 
 
@@ -28,6 +29,8 @@ const theme = createTheme();
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -112,8 +115,7 @@ const Login = () => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              className="btn-mui"
-              href=""
+              onClick={() => navigate("/dashboard")}
             >
               Entrar
             </Button>
